@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Organizational-agent game-day containment loop</title>
+  <desc id="desc">Five failure injections—duplicate event, wrong approver, revoked credential, process restart, and poisoned memory—flow through containment, authoritative state and effect checks, evidence review, owner response, and a release-gating regression before rollout continues.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6654e8"/></marker><style>.h{font:700 44px Inter,Arial,sans-serif;fill:#11143f}.s{font:400 20px Inter,Arial,sans-serif;fill:#565a70}.t{font:700 21px Inter,Arial,sans-serif;fill:#171a48}.b{font:400 16px Inter,Arial,sans-serif;fill:#4c5066}.m{font:700 14px ui-monospace,SFMono-Regular,monospace;fill:#5b48dd;letter-spacing:1px}.card{fill:#fff;stroke:#d9d9ea;stroke-width:2}.mint{fill:#e9fbf5;stroke:#69dfbd;stroke-width:2}.lilac{fill:#f0edff;stroke:#a99cff;stroke-width:2}.line{stroke:#6654e8;stroke-width:4;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1600" height="900" rx="32" fill="#fafbff"/>
+  <text x="90" y="92" class="m">OPERATING PROOF</text><text x="90" y="148" class="h">Inject failure, contain effects, keep the regression</text><text x="90" y="184" class="s">A game day is complete only when the recovery path becomes repeatable evidence.</text>
+  <rect x="80" y="270" width="310" height="350" rx="26" class="lilac"/>
+  <text x="112" y="318" class="m">INJECT</text><text x="112" y="360" class="t">Failure scenarios</text>
+  <text x="112" y="404" class="b">Duplicate platform delivery</text><text x="112" y="438" class="b">Wrong or revoked approver</text><text x="112" y="472" class="b">Credential revocation</text><text x="112" y="506" class="b">Process restart</text><text x="112" y="540" class="b">Poisoned memory + deletion</text>
+  <path d="M390 445H490" class="line"/>
+  <rect x="500" y="250" width="300" height="390" rx="26" class="card"/>
+  <text x="532" y="298" class="m">CONTAIN</text><text x="532" y="340" class="t">Scoped controls</text>
+  <text x="532" y="384" class="b">Stop acceptance + dispatch</text><text x="532" y="418" class="b">Revoke grants + leases</text><text x="532" y="452" class="b">Fence stale workers</text><text x="532" y="486" class="b">Quarantine memory</text><text x="532" y="520" class="b">Reconcile target effect</text><text x="532" y="554" class="b">Preserve evidence</text><text x="532" y="588" class="b">Notify named owner</text>
+  <path d="M800 445H900" class="line"/>
+  <rect x="910" y="250" width="300" height="390" rx="26" class="mint"/>
+  <text x="942" y="298" class="m">PROVE</text><text x="942" y="340" class="t">Authoritative checks</text>
+  <text x="942" y="384" class="b">Truthful durable state</text><text x="942" y="418" class="b">At most one effect</text><text x="942" y="452" class="b">Policy + actor evidence</text><text x="942" y="486" class="b">Target receipt / no effect</text><text x="942" y="520" class="b">Recovery time + cost</text><text x="942" y="554" class="b">Cleanup verified</text>
+  <path d="M1210 445H1310" class="line"/>
+  <rect x="1320" y="300" width="210" height="290" rx="26" class="card"/>
+  <text x="1350" y="348" class="m">PROMOTE</text><text x="1350" y="390" class="t">Regression gate</text><text x="1350" y="434" class="b">Minimized fixture</text><text x="1350" y="468" class="b">Exact command</text><text x="1350" y="502" class="b">Named owner</text><text x="1350" y="536" class="b">Blocks next stage</text>
+  <path d="M1425 590C1425 760 236 760 236 630" class="line"/>
+  <text x="800" y="812" text-anchor="middle" class="s">Repeat until denial, containment, recovery, evidence, and ownership remain true after restart.</text>
+</svg>

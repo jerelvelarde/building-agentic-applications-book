@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Organizational-agent responsibility allocation across deployment models</title>
+  <desc id="desc">Four columns compare direct Channels, OpenTag, managed CopilotKit direction, and Claude Tag. The same control layers remain while responsibility shifts among builder, service provider, security platform, and business owner.</desc>
+  <style>.h{font:700 42px Inter,Arial,sans-serif;fill:#11143f}.s{font:400 20px Inter,Arial,sans-serif;fill:#565a70}.t{font:700 21px Inter,Arial,sans-serif;fill:#171a48}.b{font:600 16px Inter,Arial,sans-serif;fill:#363a55}.m{font:700 14px ui-monospace,SFMono-Regular,monospace;fill:#5b48dd;letter-spacing:1px}.card{fill:#fff;stroke:#d9d9ea;stroke-width:2}.builder{fill:#f0edff}.provider{fill:#e9fbf5}.shared{fill:#eef3ff}.business{fill:#fff8e8}</style>
+  <rect width="1600" height="900" rx="32" fill="#fafbff"/>
+  <text x="84" y="86" class="m">RESPONSIBILITY ALLOCATION</text><text x="84" y="140" class="h">The control stack stays; the owner changes</text><text x="84" y="178" class="s">Hosting is one row in a larger organizational-agent operating contract.</text>
+  <g transform="translate(80 235)">
+    <rect width="330" height="510" rx="24" class="card"/><text x="28" y="50" class="t">Direct Channels</text>
+    <rect x="24" y="78" width="282" height="72" rx="14" class="builder"/><text x="40" y="110" class="b">Channel edge + runtime</text><text x="40" y="136" class="b">BUILDER</text>
+    <rect x="24" y="164" width="282" height="72" rx="14" class="builder"/><text x="40" y="196" class="b">State + tools + audit</text><text x="40" y="222" class="b">BUILDER</text>
+    <rect x="24" y="250" width="282" height="72" rx="14" class="shared"/><text x="40" y="282" class="b">Identity + policy</text><text x="40" y="308" class="b">BUILDER / SECURITY</text>
+    <rect x="24" y="336" width="282" height="72" rx="14" class="business"/><text x="40" y="368" class="b">Risk + approvals</text><text x="40" y="394" class="b">BUSINESS OWNER</text>
+    <text x="28" y="464" class="m">MAXIMUM ASSEMBLY OWNERSHIP</text>
+  </g>
+  <g transform="translate(445 235)">
+    <rect width="330" height="510" rx="24" class="card"/><text x="28" y="50" class="t">OpenTag main</text>
+    <rect x="24" y="78" width="282" height="72" rx="14" class="builder"/><text x="40" y="110" class="b">Product shell + adapters</text><text x="40" y="136" class="b">OPEN SOURCE / BUILDER</text>
+    <rect x="24" y="164" width="282" height="72" rx="14" class="builder"/><text x="40" y="196" class="b">Runtime + operations</text><text x="40" y="222" class="b">BUILDER</text>
+    <rect x="24" y="250" width="282" height="72" rx="14" class="shared"/><text x="40" y="282" class="b">Governance additions</text><text x="40" y="308" class="b">BUILDER / SECURITY</text>
+    <rect x="24" y="336" width="282" height="72" rx="14" class="business"/><text x="40" y="368" class="b">Risk + approvals</text><text x="40" y="394" class="b">BUSINESS OWNER</text>
+    <text x="28" y="464" class="m">PRODUCT-SHAPED STARTER</text>
+  </g>
+  <g transform="translate(810 235)">
+    <rect width="330" height="510" rx="24" class="card"/><text x="28" y="50" class="t">Managed direction</text>
+    <rect x="24" y="78" width="282" height="72" rx="14" class="provider"/><text x="40" y="110" class="b">Channel edge + service</text><text x="40" y="136" class="b">VERIFY PROVIDER SCOPE</text>
+    <rect x="24" y="164" width="282" height="72" rx="14" class="shared"/><text x="40" y="196" class="b">Runtime + state split</text><text x="40" y="222" class="b">CONTRACT DEPENDENT</text>
+    <rect x="24" y="250" width="282" height="72" rx="14" class="shared"/><text x="40" y="282" class="b">Identity + governance</text><text x="40" y="308" class="b">SHARED / VERIFY</text>
+    <rect x="24" y="336" width="282" height="72" rx="14" class="business"/><text x="40" y="368" class="b">Domain accountability</text><text x="40" y="394" class="b">BUSINESS OWNER</text>
+    <text x="28" y="464" class="m">EARLY-ACCESS EVIDENCE</text>
+  </g>
+  <g transform="translate(1175 235)">
+    <rect width="330" height="510" rx="24" class="card"/><text x="28" y="50" class="t">Claude Tag</text>
+    <rect x="24" y="78" width="282" height="72" rx="14" class="provider"/><text x="40" y="110" class="b">Managed product + execution</text><text x="40" y="136" class="b">PROVIDER</text>
+    <rect x="24" y="164" width="282" height="72" rx="14" class="provider"/><text x="40" y="196" class="b">Profiles + service controls</text><text x="40" y="222" class="b">PROVIDER / ADMIN</text>
+    <rect x="24" y="250" width="282" height="72" rx="14" class="shared"/><text x="40" y="282" class="b">Resource authorization</text><text x="40" y="308" class="b">CUSTOMER / TARGET</text>
+    <rect x="24" y="336" width="282" height="72" rx="14" class="business"/><text x="40" y="368" class="b">Domain accountability</text><text x="40" y="394" class="b">BUSINESS OWNER</text>
+    <text x="28" y="464" class="m">PUBLIC BETA AT CUTOFF</text>
+  </g>
+  <text x="800" y="818" text-anchor="middle" class="s">Every column still needs an owner for authorization, evidence, failure behavior, data, and exit.</text>
+</svg>

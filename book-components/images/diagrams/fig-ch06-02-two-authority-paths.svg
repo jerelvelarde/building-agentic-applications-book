@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">One schema, two authority paths</title><desc id="desc">Equal argument shapes do not imply equal execution authority.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">One schema, two authority paths</text><text x="80" y="124" class="subtitle">Equal argument shapes do not imply equal execution authority.</text>
+  <g transform="translate(120 190)">
+    <rect width="560" height="440" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">CLIENT AUTHORITY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">preview_transaction</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">amount + merchant</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">validate local draft shape</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">update current screen</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">no service credential</text>
+<text x="28" y="228" class="small" fill="#010507" style="fill:#010507">no durable product effect</text>
+  </g>
+<g transform="translate(920 190)">
+    <rect width="560" height="440" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TRUSTED AUTHORITY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">create_transaction</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">amount + merchant + proposal version</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">derive principal + tenant</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">verify approval + current policy</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">stable idempotency key</text>
+<text x="28" y="228" class="small" fill="#010507" style="fill:#010507">commit once → product receipt</text>
+  </g>
+<rect x="680" y="320" width="240" height="100" rx="24" fill="#010507"/><text x="800" y="360" class="label" text-anchor="middle" fill="#FFFFFF" style="fill:#FFFFFF">SAME-LOOKING</text><text x="800" y="392" class="heading" text-anchor="middle" fill="#FFFFFF" style="fill:#FFFFFF">schema</text>
+<path d="M 680 370 L 730 370" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 870 370 L 920 370" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <text x="800" y="858" class="body" text-anchor="middle">The model may propose. The trusted service decides whether the consequence exists.</text>
+</svg>

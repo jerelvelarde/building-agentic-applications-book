@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic application cutaway</title><desc id="desc">The model loop is one subsystem inside a product the team must operate.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Agentic application cutaway</text><text x="80" y="124" class="subtitle">The model loop is one subsystem inside a product the team must operate.</text>
+  <g transform="translate(100 220)">
+    <rect width="300" height="360" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">INTERFACE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Control plane</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">goal + context</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">status + artifacts</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">approve + stop + recover</text>
+  </g>
+<g transform="translate(490 220)">
+    <rect width="300" height="360" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RUNTIME</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Managed loop</text>
+    <text x="28" y="116" class="small" fill="#FFFFFF" style="fill:#FFFFFF">model + planning</text>
+<text x="28" y="144" class="small" fill="#FFFFFF" style="fill:#FFFFFF">limits + retries</text>
+<text x="28" y="172" class="small" fill="#FFFFFF" style="fill:#FFFFFF">pause + resume + terminal</text>
+  </g>
+<g transform="translate(880 220)">
+    <rect width="300" height="360" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">CAPABILITIES</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Tools and services</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">typed requests</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">trusted policy boundary</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">product receipts</text>
+  </g>
+<g transform="translate(1270 220)">
+    <rect width="230" height="360" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">OPERATIONS</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Own the run</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">eval + traces</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">budgets + alerts</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">incidents + upgrades</text>
+  </g>
+<path d="M 400 400 L 490 400" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 790 400 L 880 400" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1180 400 L 1270 400" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<rect x="70" y="160" width="1460" height="52" rx="20" fill="#BEC2FF33"/><text x="800" y="194" class="body" text-anchor="middle">Identity + authority cross every request, tool, state update, and receipt</text>
+<rect x="70" y="610" width="1460" height="52" rx="20" fill="#85ECCE4D"/><text x="800" y="644" class="body" text-anchor="middle">State + memory + evidence cross every lifecycle boundary</text>
+  <text x="800" y="858" class="body" text-anchor="middle">Production-grade is demonstrated across the whole system—not inherited from a framework.</text>
+</svg>

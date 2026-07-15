@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The user interface as the control plane</title>
+  <desc id="desc">Three vertical regions show a person, an application control plane, and a trusted runtime boundary. The interface exposes status, artifacts, approval, and cancellation while authorization and effects remain enforced by the runtime.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <linearGradient id="plane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEDF5"/></linearGradient>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 30px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 17px 'Spline Sans Mono',monospace;letter-spacing:1.3px;fill:#57575B}.body{font:500 22px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">The interface is the control plane</text>
+  <text x="90" y="132" class="subtitle">Autonomy becomes useful when work is legible, interruptible, and bound to a trusted enforcement point.</text>
+
+  <g transform="translate(80 190)">
+    <rect width="300" height="600" rx="32" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="30" y="28" width="96" height="38" rx="19" fill="#85ECCE" opacity="0.55"/>
+    <text x="78" y="54" text-anchor="middle" class="label">PERSON</text>
+    <circle cx="150" cy="156" r="54" fill="#EDEDF5" stroke="#BEC2FF" stroke-width="3"/>
+    <circle cx="150" cy="139" r="18" fill="#11143D"/>
+    <path d="M112 190C120 164 180 164 188 190" fill="#11143D"/>
+    <text x="150" y="252" text-anchor="middle" class="heading">Set a goal</text>
+    <text x="150" y="291" text-anchor="middle" class="small">Inspect progress</text>
+    <text x="150" y="324" text-anchor="middle" class="small">Edit artifacts</text>
+    <text x="150" y="357" text-anchor="middle" class="small">Approve consequence</text>
+    <text x="150" y="390" text-anchor="middle" class="small">Stop or recover</text>
+    <rect x="40" y="452" width="220" height="86" rx="22" fill="#F7F7F9"/>
+    <text x="150" y="486" text-anchor="middle" class="label">USER INTENT</text>
+    <text x="150" y="518" text-anchor="middle" class="body">“Cancel this run”</text>
+  </g>
+
+  <g transform="translate(450 170)">
+    <rect width="700" height="640" rx="38" fill="url(#plane)" stroke="#BEC2FF" stroke-width="3"/>
+    <rect x="32" y="28" width="174" height="40" rx="20" fill="#BEC2FF" opacity="0.65"/>
+    <text x="119" y="55" text-anchor="middle" class="label">CONTROL PLANE</text>
+    <text x="32" y="112" class="heading">Show what the run is doing</text>
+
+    <g transform="translate(34 148)">
+      <rect width="300" height="112" rx="24" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+      <circle cx="42" cy="42" r="13" fill="#6857D9"/><text x="70" y="49" class="body">Truthful status</text>
+      <text x="42" y="83" class="small">planning · waiting · retrying · partial</text>
+    </g>
+    <g transform="translate(366 148)">
+      <rect width="300" height="112" rx="24" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+      <rect x="28" y="28" width="28" height="28" rx="6" fill="#85ECCE"/><text x="70" y="49" class="body">Useful artifacts</text>
+      <text x="42" y="83" class="small">plan · source · diff · test evidence</text>
+    </g>
+    <g transform="translate(34 286)">
+      <rect width="300" height="148" rx="24" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+      <text x="28" y="42" class="label">PROPOSED ACTION</text>
+      <text x="28" y="78" class="body">Exact target and impact</text>
+      <rect x="28" y="102" width="92" height="32" rx="16" fill="#F0F0F4"/><text x="74" y="124" text-anchor="middle" class="label">EDIT</text>
+      <rect x="132" y="102" width="134" height="32" rx="16" fill="#85ECCE"/><text x="199" y="124" text-anchor="middle" class="label">APPROVE</text>
+    </g>
+    <g transform="translate(366 286)">
+      <rect width="300" height="148" rx="24" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+      <text x="28" y="42" class="label">CONTROL SEMANTICS</text>
+      <text x="28" y="78" class="body">Stop generation</text>
+      <text x="28" y="108" class="body">Cancel tool · Roll back effect</text>
+      <text x="28" y="134" class="small">Never collapse these into one button.</text>
+    </g>
+    <path d="M70 500H630" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="350" y="538" text-anchor="middle" class="label">STREAM EVENTS AND ACKNOWLEDGEMENTS</text>
+    <text x="350" y="580" text-anchor="middle" class="small">The UI requests control; it does not pretend an effect is undone.</text>
+  </g>
+
+  <g transform="translate(1220 190)">
+    <rect width="300" height="600" rx="32" fill="#11143D"/>
+    <rect x="30" y="28" width="172" height="38" rx="19" fill="#85ECCE"/>
+    <text x="116" y="54" text-anchor="middle" class="label">TRUSTED BOUNDARY</text>
+    <text x="30" y="118" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Runtime and tools</text>
+    <text x="30" y="166" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Authenticate identity</text>
+    <text x="30" y="202" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Authorize target</text>
+    <text x="30" y="238" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Persist checkpoint</text>
+    <text x="30" y="274" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Execute idempotently</text>
+    <text x="30" y="310" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Acknowledge cancellation</text>
+    <text x="30" y="346" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Record outcome</text>
+    <line x1="30" y1="390" x2="270" y2="390" stroke="#BEC2FF" opacity="0.55"/>
+    <text x="30" y="432" class="label" fill="#85ECCE" style="fill:#85ECCE">ENFORCES</text>
+    <text x="30" y="470" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Whether the action</text>
+    <text x="30" y="501" class="body" fill="#FFFFFF" style="fill:#FFFFFF">may happen at all.</text>
+  </g>
+
+  <path d="M380 492H438" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1150 492H1208" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>

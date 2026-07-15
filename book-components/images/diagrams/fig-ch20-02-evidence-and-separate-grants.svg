@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence return and separate organizational grants</title>
+  <desc id="desc">A read-only machine-analysis grant produces signed commands, tests, files, hashes, findings, and a verifier decision. Separate branches require new grants for patching and for publishing, merging, or executing a business action.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6654e8"/></marker>
+    <style>.h{font:700 44px Inter,Arial,sans-serif;fill:#11143f}.s{font:400 21px Inter,Arial,sans-serif;fill:#565a70}.t{font:700 23px Inter,Arial,sans-serif;fill:#171a48}.b{font:400 17px Inter,Arial,sans-serif;fill:#4c5066}.m{font:700 14px ui-monospace,SFMono-Regular,monospace;fill:#5b48dd;letter-spacing:1px}.card{fill:#fff;stroke:#d9d9ea;stroke-width:2}.mint{fill:#e9fbf5;stroke:#69dfbd;stroke-width:2}.lilac{fill:#f0edff;stroke:#a99cff;stroke-width:2}.line{stroke:#6654e8;stroke-width:4;fill:none;marker-end:url(#a)}.dash{stroke:#8d83e9;stroke-width:3;fill:none;stroke-dasharray:10 9;marker-end:url(#a)}</style>
+  </defs>
+  <rect width="1600" height="900" rx="32" fill="#fafbff"/>
+  <text x="90" y="92" class="m">SEPARATE AUTHORITY</text>
+  <text x="90" y="148" class="h">Completion evidence does not grant the next effect</text>
+  <text x="90" y="184" class="s">Investigation, patching, publication, and domain writes are distinct decisions.</text>
+
+  <rect x="82" y="286" width="245" height="220" rx="24" class="lilac"/>
+  <text x="112" y="332" class="m">GRANT A</text><text x="112" y="376" class="t">Read-only analysis</text>
+  <text x="112" y="415" class="b">Pinned revision</text><text x="112" y="446" class="b">Named test commands</text><text x="112" y="477" class="b">No writes or network</text>
+  <path d="M327 396H425" class="line"/>
+
+  <rect x="435" y="238" width="310" height="315" rx="24" class="card"/>
+  <text x="465" y="286" class="m">MACHINE EVIDENCE</text><text x="465" y="330" class="t">Signed result bundle</text>
+  <text x="465" y="370" class="b">Files + content hashes</text><text x="465" y="402" class="b">Commands + exit codes</text><text x="465" y="434" class="b">Tests + artifact references</text><text x="465" y="466" class="b">Network/tool calls</text><text x="465" y="498" class="b">Findings + unresolved risks</text><text x="465" y="530" class="b">Environment + policy version</text>
+  <path d="M745 396H838" class="line"/>
+
+  <rect x="848" y="286" width="250" height="220" rx="24" class="mint"/>
+  <text x="878" y="332" class="m">VERIFIER</text><text x="878" y="376" class="t">Check acceptance</text>
+  <text x="878" y="415" class="b">Final revision matches</text><text x="878" y="446" class="b">Evidence is complete</text><text x="878" y="477" class="b">No forbidden effect</text>
+
+  <path d="M1098 355C1180 355 1190 290 1260 290" class="dash"/>
+  <path d="M1098 440C1180 440 1190 525 1260 525" class="dash"/>
+  <rect x="1270" y="212" width="250" height="180" rx="24" class="lilac"/>
+  <text x="1300" y="258" class="m">GRANT B</text><text x="1300" y="300" class="t">Patch workspace</text><text x="1300" y="337" class="b">New scope + new expiry</text><text x="1300" y="367" class="b">Disposable write boundary</text>
+  <rect x="1270" y="458" width="250" height="180" rx="24" class="card"/>
+  <text x="1300" y="504" class="m">GRANT C</text><text x="1300" y="546" class="t">Publish or act</text><text x="1300" y="583" class="b">Merge / deploy / message</text><text x="1300" y="613" class="b">or one domain effect</text>
+
+  <rect x="130" y="700" width="1340" height="92" rx="22" fill="#121542"/>
+  <text x="800" y="756" text-anchor="middle" fill="#fff" style="font:700 21px Inter,Arial,sans-serif">A green finding is evidence for review. It is never a bearer token for the next action.</text>
+</svg>

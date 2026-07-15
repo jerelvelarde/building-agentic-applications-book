@@ -1,0 +1,9 @@
+{
+  "manuscript_globs": ["sections/**/*.md"],
+  "exclude_globs": [],
+  "require_all_chapters": true,
+  "require_all_manifest_figures_referenced": true,
+  "verification_marker": "Verified July 2026",
+  "verification_window_lines": 5,
+  "allowlist": []
+}

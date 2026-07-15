@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Build-versus-buy control record</title>
+  <desc id="desc">A central control record maps a consequential boundary to provider, application, security platform, and business owners, then requires enforcement, evidence, failure behavior, data location, dependency, and exit path before selection.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6654e8"/></marker><style>.h{font:700 44px Inter,Arial,sans-serif;fill:#11143f}.s{font:400 20px Inter,Arial,sans-serif;fill:#565a70}.t{font:700 22px Inter,Arial,sans-serif;fill:#171a48}.b{font:400 17px Inter,Arial,sans-serif;fill:#4c5066}.m{font:700 14px ui-monospace,SFMono-Regular,monospace;fill:#5b48dd;letter-spacing:1px}.card{fill:#fff;stroke:#d9d9ea;stroke-width:2}.mint{fill:#e9fbf5;stroke:#69dfbd;stroke-width:2}.lilac{fill:#f0edff;stroke:#a99cff;stroke-width:2}.line{stroke:#6654e8;stroke-width:3;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1600" height="900" rx="32" fill="#fafbff"/>
+  <text x="90" y="92" class="m">DECISION RECORD</text><text x="90" y="148" class="h">No control ships without an owner and an exit</text><text x="90" y="184" class="s">Replace feature scores with inspectable responsibility contracts.</text>
+  <rect x="515" y="242" width="570" height="410" rx="28" class="lilac"/>
+  <text x="550" y="292" class="m">CONTROL</text><text x="550" y="338" class="t">Delegation credential revocation</text>
+  <text x="550" y="385" class="b">Enforcement: broker denies new leases</text><text x="550" y="419" class="b">Evidence: denial event + late-tool test</text><text x="550" y="453" class="b">Failure: fail closed; reconcile in-flight effect</text><text x="550" y="487" class="b">Data: regional policy store</text><text x="550" y="521" class="b">Dependency: selected issuer + broker</text><text x="550" y="555" class="b">Exit: revoke issuer, drain, export audit</text>
+  <rect x="80" y="250" width="330" height="120" rx="22" class="card"/><text x="110" y="296" class="m">SERVICE PROVIDER</text><text x="110" y="336" class="t">Contracted behavior</text>
+  <rect x="80" y="475" width="330" height="120" rx="22" class="mint"/><text x="110" y="521" class="m">APPLICATION TEAM</text><text x="110" y="561" class="t">Agent + integration</text>
+  <rect x="1190" y="250" width="330" height="120" rx="22" class="mint"/><text x="1220" y="296" class="m">SECURITY / PLATFORM</text><text x="1220" y="336" class="t">Identity + enforcement</text>
+  <rect x="1190" y="475" width="330" height="120" rx="22" class="card"/><text x="1220" y="521" class="m">BUSINESS OWNER</text><text x="1220" y="561" class="t">Risk + outcome</text>
+  <path d="M410 310H495" class="line"/><path d="M410 535H495" class="line"/><path d="M1190 310H1105" class="line"/><path d="M1190 535H1105" class="line"/>
+  <rect x="220" y="742" width="1160" height="74" rx="20" fill="#121542"/><text x="800" y="789" text-anchor="middle" fill="#fff" style="font:700 20px Inter,Arial,sans-serif">BLOCK SELECTION when a critical boundary has no enforceable owner, evidence path, or exit.</text>
+</svg>

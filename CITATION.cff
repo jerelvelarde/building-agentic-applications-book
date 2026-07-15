@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you cite this book or its companion code, please use the metadata below."
+title: "The Builder's Guide to Agentic Applications 2026"
+authors:
+  - family-names: Velarde
+    given-names: Jerel
+version: "2026-first-draft"
+date-released: 2026-07-15
+url: "https://github.com/jerelvelarde/building-agentic-applications-book"
+repository-code: "https://github.com/jerelvelarde/building-agentic-applications-book"
+license: "CC-BY-NC-ND-4.0 AND MIT"
+abstract: >-
+  An actionable guide to designing, building, and operating agentic
+  applications across application, machine, and organizational surfaces.

@@ -1,0 +1,33 @@
+# Operating-system and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# JavaScript / TypeScript
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Generated book artifacts and private working material
+book-components/tmp/
+book-components/prompts/
+
+# Logs and temporary files
+*.log
+*.tmp

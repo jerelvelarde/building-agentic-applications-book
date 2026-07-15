@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-level delegation without ambient authority</title><desc id="desc">Identity, scope, evidence, and approval survive every handoff.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Cross-level delegation without ambient authority</text><text x="80" y="124" class="subtitle">Identity, scope, evidence, and approval survive every handoff.</text>
+  <g transform="translate(70 190)">
+    <rect width="255" height="250" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">LEVEL 3</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Channel request</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">verified requester</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">organizational policy</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">bounded objective</text>
+  </g>
+<g transform="translate(390 190)">
+    <rect width="310" height="250" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TASK ENVELOPE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Typed delegation</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">source revision + scope</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">network + credential handles</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">budget + expiry + artifacts</text>
+  </g>
+<g transform="translate(765 190)">
+    <rect width="300" height="250" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">LEVEL 2</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Isolated worker</text>
+    <text x="28" y="116" class="small" fill="#FFFFFF" style="fill:#FFFFFF">pinned worktree</text>
+<text x="28" y="144" class="small" fill="#FFFFFF" style="fill:#FFFFFF">approved commands</text>
+<text x="28" y="172" class="small" fill="#FFFFFF" style="fill:#FFFFFF">files + tests + hashes</text>
+  </g>
+<g transform="translate(1130 190)">
+    <rect width="390" height="250" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">LEVEL 1</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Evidence dashboard</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">streamed status</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">inspectable artifacts</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">separate approval action</text>
+  </g>
+<path d="M 325 315 L 390 315" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 700 315 L 765 315" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1065 315 L 1130 315" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<g transform="translate(390 520)">
+    <rect width="675" height="190" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">HANDOFF CONTRACT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Never forward a transcript as machine authority</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">principal · allowed actions · policy · provenance · recovery</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">short-lived credentials · explicit result schema · no implicit publish/deploy</text>
+  </g>
+  <text x="800" y="858" class="body" text-anchor="middle">Every expansion of authority requires stronger identity, isolation, supervision, provenance, and recovery.</text>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Product task-state machine</title><desc id="desc">A boolean cannot explain waiting, retrying, partial work, cancellation races, or truthfully terminal outcomes.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Product task-state machine</text><text x="80" y="124" class="subtitle">A boolean cannot explain waiting, retrying, partial work, cancellation races, or truthfully terminal outcomes.</text>
+  <g transform="translate(70 190)">
+    <rect width="210" height="120" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">START</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Idle</text>
+
+  </g>
+<g transform="translate(340 190)">
+    <rect width="210" height="120" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">PHASE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Planning</text>
+
+  </g>
+<g transform="translate(610 190)">
+    <rect width="210" height="120" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">PHASE</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Running</text>
+
+  </g>
+<g transform="translate(910 160)">
+    <rect width="260" height="140" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">INTERRUPT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Waiting for user</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">resume same task</text>
+  </g>
+<g transform="translate(910 350)">
+    <rect width="260" height="140" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RECOVERY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Retrying / partial</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">evidence preserved</text>
+  </g>
+<g transform="translate(1230 190)">
+    <rect width="300" height="300" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TERMINAL</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Truthful outcomes</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">complete</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">cancelled</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">failed</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">limited / partial</text>
+  </g>
+<path d="M 280 250 L 340 250" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 550 250 L 610 250" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 820 235 L 910 230" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 820 280 L 910 405" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1170 230 L 1230 250" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1170 420 L 1230 370" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1040 160 C 1040 90 720 90 720 190" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<rect x="520" y="600" width="760" height="90" rx="28" fill="#FFF388" opacity=".7"/><text x="900" y="655" class="body" text-anchor="middle">cancel_requested may still reach complete when completion wins the race</text>
+
+</svg>

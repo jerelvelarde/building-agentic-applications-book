@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Level 2 authority envelope</title>
+  <desc id="desc">A machine agent process is nested inside a tool broker, operating-system sandbox, and disposable host boundary. Filesystem, shell, network, credentials, browser, and MCP capabilities enter only through explicit gates. A working directory sits inside the process and is labeled context, not containment.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 28px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 16px 'Spline Sans Mono',monospace;letter-spacing:1.2px;fill:#57575B}.body{font:500 21px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 18px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">The machine is the environment</text>
+  <text x="90" y="132" class="subtitle">Context selects where work begins. Enforced layers decide where the process must stop.</text>
+
+  <g transform="translate(320 178)">
+    <rect width="960" height="640" rx="58" fill="#F3F0FF" stroke="#BEC2FF" stroke-width="3"/>
+    <rect x="32" y="28" width="214" height="38" rx="19" fill="#BEC2FF"/><text x="139" y="54" text-anchor="middle" class="label">DISPOSABLE HOST / VM</text>
+    <text x="690" y="54" class="small">Rebuild · revoke · destroy</text>
+    <rect x="100" y="98" width="760" height="474" rx="48" fill="#E7FBF5" stroke="#85ECCE" stroke-width="3"/>
+    <rect x="132" y="126" width="172" height="38" rx="19" fill="#85ECCE"/><text x="218" y="152" text-anchor="middle" class="label">OS SANDBOX</text>
+    <text x="562" y="152" class="small">Filesystem · process · network boundary</text>
+    <rect x="196" y="196" width="632" height="318" rx="42" fill="#FFFFFF" stroke="#11143D" stroke-width="3"/>
+    <rect x="228" y="224" width="182" height="38" rx="19" fill="#11143D"/><text x="319" y="250" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">TOOL BROKER</text>
+    <text x="460" y="250" class="small">Policy · identity · approval · leases</text>
+    <rect x="324" y="298" width="376" height="154" rx="34" fill="#EEE6FE" stroke="#BEC2FF" stroke-width="3"/>
+    <text x="512" y="340" text-anchor="middle" class="heading">Agent process</text>
+    <rect x="370" y="362" width="284" height="48" rx="24" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2" stroke-dasharray="7 7"/>
+    <text x="512" y="393" text-anchor="middle" class="label">WORKING DIRECTORY</text>
+    <text x="512" y="436" text-anchor="middle" class="small">Context convention · not an OS boundary</text>
+  </g>
+
+  <g transform="translate(70 220)">
+    <rect width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="42" text-anchor="middle" class="body">Filesystem</text>
+    <rect y="100" width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="142" text-anchor="middle" class="body">Shell + process</text>
+    <rect y="200" width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="242" text-anchor="middle" class="body">Network</text>
+  </g>
+  <g transform="translate(1320 220)">
+    <rect width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="42" text-anchor="middle" class="body">Credentials</text>
+    <rect y="100" width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="142" text-anchor="middle" class="body">Browser + CLI</text>
+    <rect y="200" width="210" height="68" rx="22" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/><text x="105" y="242" text-anchor="middle" class="body">MCP + plugins</text>
+  </g>
+
+  <path d="M280 254H466" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M280 354H466" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M280 454H466" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1320 254H1134" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1320 354H1134" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1320 454H1134" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="430" y="748" width="740" height="82" rx="26" fill="#11143D"/>
+  <text x="800" y="783" text-anchor="middle" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Authority = identity × tool policy × process isolation × network × time</text>
+  <text x="800" y="812" text-anchor="middle" class="small" fill="#85ECCE" style="fill:#85ECCE">Missing any factor can collapse the envelope.</text>
+</svg>

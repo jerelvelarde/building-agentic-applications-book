@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Walk the proposal through every state</title><desc id="desc">Each transition has an authorized actor, a precondition, and a truthful UI state.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Walk the proposal through every state</text><text x="80" y="124" class="subtitle">Each transition has an authorized actor, a precondition, and a truthful UI state.</text>
+  <g transform="translate(60 210)">
+    <rect width="220" height="150" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">AGENT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Draft</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">proposal v7</text>
+  </g>
+<g transform="translate(340 210)">
+    <rect width="260" height="150" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RUNTIME</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Pending review</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">version + expiry</text>
+  </g>
+<g transform="translate(680 150)">
+    <rect width="240" height="150" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">HUMAN</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Approved</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">eligible reviewer</text>
+  </g>
+<g transform="translate(680 360)">
+    <rect width="240" height="150" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TERMINAL</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Rejected / expired</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">read-only record</text>
+  </g>
+<g transform="translate(1000 150)">
+    <rect width="220" height="150" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">SERVICE</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Committing</text>
+    <text x="28" y="116" class="small" fill="#FFFFFF" style="fill:#FFFFFF">same operation key</text>
+  </g>
+<g transform="translate(1300 100)">
+    <rect width="240" height="150" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RECEIPT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Committed</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">authoritative result</text>
+  </g>
+<g transform="translate(1300 330)">
+    <rect width="240" height="180" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RECOVERY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Outcome unknown</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">reconcile committed</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">reconcile not committed</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">manual review</text>
+  </g>
+<path d="M 280 285 L 340 285" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 600 260 L 680 225" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 600 310 L 680 435" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 920 225 L 1000 225" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1220 225 L 1300 175" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1220 255 L 1300 420" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 470 360 C 470 650 170 650 170 360" stroke="#FA5F67" stroke-width="4" fill="none" marker-end="url(#arrow)"/><text x="320" y="690" class="body" text-anchor="middle">material edit → proposal v8; v7 becomes superseded</text>
+
+</svg>

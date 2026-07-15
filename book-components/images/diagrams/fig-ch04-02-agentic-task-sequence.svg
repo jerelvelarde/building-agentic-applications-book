@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Request-response UI versus an agentic task</title><desc id="desc">Agentic work needs visible intermediate states, interruption, and recovery.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Request-response UI versus an agentic task</text><text x="80" y="124" class="subtitle">Agentic work needs visible intermediate states, interruption, and recovery.</text>
+  <g transform="translate(70 190)">
+    <rect width="500" height="500" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">REQUEST / RESPONSE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">One synchronous projection</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">user action</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">spinner</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">deterministic response</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">or one terminal error</text>
+  </g>
+<g transform="translate(650 190)">
+    <rect width="880" height="500" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">AGENTIC TASK</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">A sequence the user supervises</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">goal accepted → plan/stage</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">streamed events → first useful artifact</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">tool action → product evidence</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">interrupt → exact human decision</text>
+<text x="28" y="228" class="small" fill="#010507" style="fill:#010507">disconnect → rejoin same thread</text>
+<text x="28" y="256" class="small" fill="#010507" style="fill:#010507">terminal result → receipt or recovery</text>
+  </g>
+<path d="M 170 580 L 470 580" stroke="#BEC2FF" stroke-width="12" stroke-linecap="round"/><path d="M 760 580 L 1420 580" stroke="#85ECCE" stroke-width="12" stroke-dasharray="70 22" stroke-linecap="round"/>
+  <text x="800" y="858" class="body" text-anchor="middle">A prompt box can start the task; it cannot represent the whole task.</text>
+</svg>

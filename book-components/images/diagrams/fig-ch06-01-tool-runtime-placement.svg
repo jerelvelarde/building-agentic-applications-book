@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Place each tool at the correct execution boundary</title>
+  <desc id="desc">A decision rail routes capabilities to a frontend tool, renderer, trusted backend, external worker, or human decision boundary according to client-only context, execution need, secrets, duration, side effects, and required judgment.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 28px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 16px 'Spline Sans Mono',monospace;letter-spacing:1.2px;fill:#57575B}.body{font:500 21px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 18px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">Put the tool in the right place</text>
+  <text x="90" y="132" class="subtitle">A shared schema does not make five execution boundaries interchangeable.</text>
+
+  <rect x="90" y="190" width="1420" height="92" rx="30" fill="#11143D"/>
+  <text x="130" y="226" class="label" fill="#85ECCE" style="fill:#85ECCE">ASK IN ORDER</text>
+  <text x="130" y="258" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Needs client-only context? → Renders only? → Uses secrets or privileged data? → Long-running or machine work? → Requires human judgment?</text>
+
+  <path d="M220 282V342H1380V282" fill="none" stroke="#6857D9" stroke-width="4"/>
+
+  <g transform="translate(70 350)">
+    <rect width="280" height="410" rx="30" fill="#FFFFFF" stroke="#85ECCE" stroke-width="3"/>
+    <circle cx="140" cy="72" r="34" fill="#85ECCE" opacity="0.58"/><text x="140" y="80" text-anchor="middle" class="heading">1</text>
+    <text x="140" y="137" text-anchor="middle" class="heading">Frontend tool</text>
+    <text x="140" y="171" text-anchor="middle" class="label">EXECUTES IN CLIENT</text>
+    <line x1="28" y1="198" x2="252" y2="198" stroke="#DBDBE5"/>
+    <text x="28" y="235" class="body">Use for</text><text x="28" y="268" class="small">selection · viewport</text><text x="28" y="296" class="small">draft UI state · low-risk reads</text>
+    <text x="28" y="340" class="body">Never for</text><text x="28" y="373" class="small">secrets · tenant authority</text><text x="28" y="401" class="small">privileged external writes</text>
+  </g>
+
+  <g transform="translate(365 350)">
+    <rect width="280" height="410" rx="30" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <circle cx="140" cy="72" r="34" fill="#BEC2FF" opacity="0.68"/><text x="140" y="80" text-anchor="middle" class="heading">2</text>
+    <text x="140" y="137" text-anchor="middle" class="heading">Renderer</text>
+    <text x="140" y="171" text-anchor="middle" class="label">DISPLAYS BACKEND WORK</text>
+    <line x1="28" y1="198" x2="252" y2="198" stroke="#DBDBE5"/>
+    <text x="28" y="235" class="body">Use for</text><text x="28" y="268" class="small">semantic result → component</text><text x="28" y="296" class="small">lifecycle · accessible states</text>
+    <text x="28" y="340" class="body">Invariant</text><text x="28" y="373" class="small">Rendering does not execute</text><text x="28" y="401" class="small">or authorize the tool.</text>
+  </g>
+
+  <g transform="translate(660 350)">
+    <rect width="280" height="410" rx="30" fill="#11143D"/>
+    <circle cx="140" cy="72" r="34" fill="#85ECCE"/><text x="140" y="80" text-anchor="middle" class="heading">3</text>
+    <text x="140" y="137" text-anchor="middle" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Trusted backend</text>
+    <text x="140" y="171" text-anchor="middle" class="label" fill="#BEC2FF" style="fill:#BEC2FF">AUTHORIZES + EXECUTES</text>
+    <line x1="28" y1="198" x2="252" y2="198" stroke="#BEC2FF" opacity="0.55"/>
+    <text x="28" y="235" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Use for</text><text x="28" y="268" class="small" fill="#FFFFFF" style="fill:#FFFFFF">secrets · tenant data</text><text x="28" y="296" class="small" fill="#FFFFFF" style="fill:#FFFFFF">writes · business invariants</text>
+    <text x="28" y="340" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Must add</text><text x="28" y="373" class="small" fill="#FFFFFF" style="fill:#FFFFFF">identity · idempotency</text><text x="28" y="401" class="small" fill="#FFFFFF" style="fill:#FFFFFF">audit · outcome receipt</text>
+  </g>
+
+  <g transform="translate(955 350)">
+    <rect width="280" height="410" rx="30" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <circle cx="140" cy="72" r="34" fill="#BEC2FF" opacity="0.68"/><text x="140" y="80" text-anchor="middle" class="heading">4</text>
+    <text x="140" y="137" text-anchor="middle" class="heading">External worker</text>
+    <text x="140" y="171" text-anchor="middle" class="label">DURABLE OR ISOLATED</text>
+    <line x1="28" y1="198" x2="252" y2="198" stroke="#DBDBE5"/>
+    <text x="28" y="235" class="body">Use for</text><text x="28" y="268" class="small">long tasks · machine access</text><text x="28" y="296" class="small">queues · sandbox execution</text>
+    <text x="28" y="340" class="body">Must add</text><text x="28" y="373" class="small">lease · heartbeat · budget</text><text x="28" y="401" class="small">verification · recovery</text>
+  </g>
+
+  <g transform="translate(1250 350)">
+    <rect width="280" height="410" rx="30" fill="#FFFFFF" stroke="#85ECCE" stroke-width="3"/>
+    <circle cx="140" cy="72" r="34" fill="#85ECCE" opacity="0.58"/><text x="140" y="80" text-anchor="middle" class="heading">5</text>
+    <text x="140" y="137" text-anchor="middle" class="heading">Human boundary</text>
+    <text x="140" y="171" text-anchor="middle" class="label">DECIDES, NOT DECORATES</text>
+    <line x1="28" y1="198" x2="252" y2="198" stroke="#DBDBE5"/>
+    <text x="28" y="235" class="body">Use for</text><text x="28" y="268" class="small">ambiguity · consequence</text><text x="28" y="296" class="small">edit · reject · approve</text>
+    <text x="28" y="340" class="body">Must bind</text><text x="28" y="373" class="small">eligible principal · exact</text><text x="28" y="401" class="small">proposal · expiry</text>
+  </g>
+
+  <rect x="420" y="800" width="760" height="54" rx="27" fill="#EEE6FE"/>
+  <text x="800" y="835" text-anchor="middle" class="body">Shape validation ≠ authorization · retries require idempotency at the effect boundary</text>
+</svg>

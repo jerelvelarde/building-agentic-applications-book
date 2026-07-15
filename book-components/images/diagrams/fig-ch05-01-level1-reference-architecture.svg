@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Level 1 reference architecture</title>
+  <desc id="desc">Web and mobile clients use CopilotKit to cross an authenticated AG-UI gateway. The runtime can use a built-in agent or a separately tested LangGraph extension, then reaches application services through authorized tools with persistence and audit below.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#85ECCE"/><stop offset="1" stop-color="#BEC2FF"/></linearGradient>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 30px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 17px 'Spline Sans Mono',monospace;letter-spacing:1.2px;fill:#57575B}.body{font:500 22px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">Level 1 · application agent</text>
+  <text x="90" y="132" class="subtitle">CopilotKit owns the interaction layer. Application authorization still lives at the trusted service boundary.</text>
+
+  <g transform="translate(80 230)">
+    <rect width="280" height="430" rx="32" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="28" y="28" width="102" height="38" rx="19" fill="#85ECCE" opacity="0.58"/><text x="79" y="54" text-anchor="middle" class="label">CLIENTS</text>
+    <rect x="34" y="100" width="92" height="160" rx="20" fill="#EDEDF5" stroke="#BEC2FF" stroke-width="2"/>
+    <rect x="48" y="124" width="64" height="104" rx="8" fill="#FFFFFF"/><circle cx="80" cy="244" r="6" fill="#11143D"/>
+    <rect x="154" y="112" width="92" height="138" rx="12" fill="#EDEDF5" stroke="#BEC2FF" stroke-width="2"/>
+    <rect x="166" y="130" width="68" height="94" rx="6" fill="#FFFFFF"/>
+    <text x="80" y="294" text-anchor="middle" class="body">Mobile</text><text x="200" y="294" text-anchor="middle" class="body">Web</text>
+    <line x1="28" y1="326" x2="252" y2="326" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="365" class="heading">CopilotKit UI</text>
+    <text x="28" y="400" class="small">messages · components</text><text x="28" y="426" class="small">shared state · human control</text>
+  </g>
+
+  <g transform="translate(420 230)">
+    <rect width="245" height="430" rx="32" fill="#11143D"/>
+    <rect x="28" y="28" width="136" height="38" rx="19" fill="#BEC2FF"/><text x="96" y="54" text-anchor="middle" class="label">GATEWAY</text>
+    <text x="28" y="116" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">AG-UI</text>
+    <text x="28" y="154" class="small" fill="#FFFFFF" style="fill:#FFFFFF">run lifecycle</text>
+    <text x="28" y="184" class="small" fill="#FFFFFF" style="fill:#FFFFFF">messages and tools</text>
+    <text x="28" y="214" class="small" fill="#FFFFFF" style="fill:#FFFFFF">state snapshots/deltas</text>
+    <line x1="28" y1="250" x2="217" y2="250" stroke="#BEC2FF" opacity="0.55"/>
+    <text x="28" y="292" class="label" fill="#85ECCE" style="fill:#85ECCE">MUST BIND</text>
+    <text x="28" y="330" class="body" fill="#FFFFFF" style="fill:#FFFFFF">user · tenant</text>
+    <text x="28" y="362" class="body" fill="#FFFFFF" style="fill:#FFFFFF">thread · agent</text>
+    <text x="28" y="404" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Reject client-selected authority.</text>
+  </g>
+
+  <g transform="translate(725 190)">
+    <rect width="470" height="510" rx="36" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <rect x="30" y="28" width="126" height="38" rx="19" fill="#BEC2FF" opacity="0.65"/><text x="93" y="54" text-anchor="middle" class="label">RUNTIME</text>
+    <text x="30" y="112" class="heading">Choose the smallest sufficient runtime</text>
+    <rect x="30" y="148" width="410" height="116" rx="24" fill="#F7F7F9" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="54" y="187" class="label">BUILT-IN AGENT</text>
+    <text x="54" y="221" class="body">Direct tool loop for bounded app work</text>
+    <text x="54" y="248" class="small">Observed in the audited finance example</text>
+    <rect x="30" y="292" width="410" height="144" rx="24" fill="#EEE6FE" stroke="#BEC2FF" stroke-width="2"/>
+    <text x="54" y="331" class="label">LANGGRAPH EXTENSION</text>
+    <text x="54" y="365" class="body">Explicit topology · checkpoints</text>
+    <text x="54" y="397" class="body">durable interrupt · recovery</text>
+    <text x="54" y="424" class="small">Teach and test separately; do not imply it is present.</text>
+    <rect x="136" y="460" width="198" height="34" rx="17" fill="url(#accent)"/>
+    <text x="235" y="483" text-anchor="middle" class="label">LANGCHAIN TOOLS</text>
+  </g>
+
+  <g transform="translate(1260 230)">
+    <rect width="260" height="430" rx="32" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="28" y="28" width="146" height="38" rx="19" fill="#85ECCE" opacity="0.58"/><text x="101" y="54" text-anchor="middle" class="label">APP SERVICES</text>
+    <text x="28" y="116" class="body">Ledger API</text><line x1="28" y1="136" x2="232" y2="136" stroke="#DBDBE5"/>
+    <text x="28" y="180" class="body">Identity service</text><line x1="28" y1="200" x2="232" y2="200" stroke="#DBDBE5"/>
+    <text x="28" y="244" class="body">Policy + approval</text><line x1="28" y1="264" x2="232" y2="264" stroke="#DBDBE5"/>
+    <text x="28" y="308" class="body">External providers</text><line x1="28" y1="328" x2="232" y2="328" stroke="#DBDBE5"/>
+    <text x="28" y="372" class="label">SIDE EFFECTS</text>
+    <text x="28" y="405" class="small">idempotent · auditable</text>
+  </g>
+
+  <path d="M360 445H408" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M665 445H713" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1195 445H1248" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="420" y="748" width="780" height="88" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+  <text x="810" y="784" text-anchor="middle" class="body">Persistence · action ledger · traces · evaluation</text>
+  <text x="810" y="814" text-anchor="middle" class="small">Related records, different responsibilities.</text>
+</svg>

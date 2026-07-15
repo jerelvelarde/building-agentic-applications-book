@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Identity, authority, and approval flow</title>
+  <desc id="desc">A channel event is mapped from platform sender to application principal. An agent creates a canonical persisted proposal. An eligible approver acts on an opaque proposal reference. Policy reauthorizes immediately before a short-lived credential executes the action in the target system, then records an audit receipt.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 26px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 15px 'Spline Sans Mono',monospace;letter-spacing:1.1px;fill:#57575B}.body{font:500 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">Who asked · who acts · who approves</text>
+  <text x="90" y="132" class="subtitle">Preserve the actor chain and bind every approval to one exact, expiring proposal.</text>
+
+  <g transform="translate(70 220)">
+    <rect width="220" height="180" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="24" y="24" width="126" height="36" rx="18" fill="#EDEDF5"/><text x="87" y="49" text-anchor="middle" class="label">REQUESTER</text>
+    <text x="24" y="98" class="heading">Platform sender</text><text x="24" y="130" class="small">tenant · channel · thread</text><text x="24" y="156" class="small">event ID · user ID</text>
+  </g>
+  <path d="M290 310H350" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(360 220)">
+    <rect width="240" height="180" rx="28" fill="#FFFFFF" stroke="#85ECCE" stroke-width="3"/>
+    <rect x="24" y="24" width="138" height="36" rx="18" fill="#85ECCE"/><text x="93" y="49" text-anchor="middle" class="label">IDENTITY MAP</text>
+    <text x="24" y="98" class="heading">Trusted principal</text><text x="24" y="130" class="small">verified platform mapping</text><text x="24" y="156" class="small">roles + attributes</text>
+  </g>
+  <path d="M600 310H660" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(670 220)">
+    <rect width="250" height="180" rx="28" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <rect x="24" y="24" width="118" height="36" rx="18" fill="#BEC2FF"/><text x="83" y="49" text-anchor="middle" class="label">AGENT</text>
+    <text x="24" y="98" class="heading">Propose action</text><text x="24" y="130" class="small">canonical arguments</text><text x="24" y="156" class="small">target · risk · policy profile</text>
+  </g>
+  <path d="M920 310H980" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(990 200)">
+    <rect width="300" height="220" rx="30" fill="#11143D"/>
+    <rect x="24" y="24" width="164" height="36" rx="18" fill="#85ECCE"/><text x="106" y="49" text-anchor="middle" class="label">PROPOSAL STORE</text>
+    <text x="24" y="98" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Persist before display</text>
+    <text x="24" y="132" class="small" fill="#FFFFFF" style="fill:#FFFFFF">proposal ID · digest · version</text>
+    <text x="24" y="160" class="small" fill="#FFFFFF" style="fill:#FFFFFF">eligible approvers · quorum</text>
+    <text x="24" y="188" class="small" fill="#FFFFFF" style="fill:#FFFFFF">expiry · idempotency key</text>
+  </g>
+
+  <g transform="translate(1030 520)">
+    <rect width="220" height="150" rx="28" fill="#FFFFFF" stroke="#85ECCE" stroke-width="3"/>
+    <rect x="24" y="20" width="136" height="34" rx="17" fill="#85ECCE"/><text x="92" y="44" text-anchor="middle" class="label">APPROVER</text>
+    <text x="24" y="92" class="heading">Authenticated</text><text x="24" y="122" class="small">opaque proposal ID only</text>
+  </g>
+  <path d="M1140 520V432" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <path d="M1290 310H1350V506" fill="none" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(1300 520)">
+    <rect width="230" height="150" rx="28" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <rect x="24" y="20" width="124" height="34" rx="17" fill="#BEC2FF"/><text x="86" y="44" text-anchor="middle" class="label">POLICY</text>
+    <text x="24" y="90" class="heading">Reauthorize</text><text x="24" y="120" class="small">identity · resource · time</text>
+  </g>
+
+  <circle cx="1300" cy="595" r="7" fill="#85ECCE"/><circle cx="750" cy="595" r="7" fill="#BEC2FF"/>
+  <path d="M1300 595H1275V700H780V595H750" fill="none" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(470 520)">
+    <rect width="280" height="150" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="24" y="20" width="180" height="34" rx="17" fill="#EEE6FE"/><text x="114" y="44" text-anchor="middle" class="label">CREDENTIAL MODE</text>
+    <text x="24" y="90" class="heading">Short-lived grant</text><text x="24" y="120" class="small">agent identity or on-behalf-of</text>
+  </g>
+  <path d="M470 595H300" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(70 520)">
+    <rect width="220" height="150" rx="28" fill="#FFFFFF" stroke="#11143D" stroke-width="3"/>
+    <rect x="24" y="20" width="128" height="34" rx="17" fill="#11143D"/><text x="88" y="44" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">TARGET</text>
+    <text x="24" y="90" class="heading">Execute once</text><text x="24" y="120" class="small">return outcome receipt</text>
+  </g>
+
+  <rect x="360" y="748" width="880" height="88" rx="28" fill="#EEE6FE"/>
+  <text x="800" y="783" text-anchor="middle" class="body">Interaction success is not governance success.</text>
+  <text x="800" y="813" text-anchor="middle" class="small">Wrong-user, replay, expiry, argument change, and revocation must fail at the trusted boundary.</text>
+</svg>

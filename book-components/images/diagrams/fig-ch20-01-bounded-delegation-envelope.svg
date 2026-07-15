@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Bounded organizational-to-machine delegation envelope</title>
+  <desc id="desc">A channel request enters a trusted delegation broker. The broker resolves identity and policy, creates a signed expiring envelope containing repository, path, command, network, budget, and evidence limits, and admits a sandboxed worker without ambient credentials.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#f7f4ff"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6755e8"/></marker>
+    <style>
+      .h{font:700 44px Inter,Arial,sans-serif;fill:#11143f}.s{font:400 21px Inter,Arial,sans-serif;fill:#565a70}.t{font:700 24px Inter,Arial,sans-serif;fill:#171a48}.b{font:400 18px Inter,Arial,sans-serif;fill:#4c5066}.m{font:700 15px ui-monospace,SFMono-Regular,monospace;fill:#5b48dd;letter-spacing:1px}.card{fill:#fff;stroke:#d9d9ea;stroke-width:2}.mint{fill:#e9fbf5;stroke:#69dfbd;stroke-width:2}.lilac{fill:#f0edff;stroke:#a99cff;stroke-width:2}.navy{fill:#121542}.white{fill:#fff}.line{stroke:#6755e8;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="32" fill="url(#bg)"/>
+  <text x="90" y="92" class="m">DELEGATION BOUNDARY</text>
+  <text x="90" y="148" class="h">Transfer one capability, not the room's authority</text>
+  <text x="90" y="184" class="s">The signed envelope becomes enforced worker configuration, not model guidance.</text>
+
+  <rect x="86" y="272" width="270" height="250" rx="26" class="card"/>
+  <text x="116" y="320" class="m">CHANNEL REQUEST</text>
+  <text x="116" y="366" class="t">Investigate failure</text>
+  <text x="116" y="405" class="b">Requester + tenant</text>
+  <text x="116" y="438" class="b">Channel + event</text>
+  <text x="116" y="471" class="b">Business objective</text>
+
+  <path d="M356 397H445" class="line"/>
+  <rect x="455" y="236" width="330" height="322" rx="26" class="lilac"/>
+  <text x="487" y="286" class="m">TRUSTED BROKER</text>
+  <text x="487" y="333" class="t">Resolve and narrow</text>
+  <text x="487" y="374" class="b">1. Map principals</text>
+  <text x="487" y="409" class="b">2. Classify task + risk</text>
+  <text x="487" y="444" class="b">3. Evaluate policy</text>
+  <text x="487" y="479" class="b">4. Canonicalize envelope</text>
+  <text x="487" y="514" class="b">5. Sign + register revocation</text>
+
+  <path d="M785 397H868" class="line"/>
+  <rect x="878" y="218" width="390" height="360" rx="26" class="card"/>
+  <text x="910" y="268" class="m">SIGNED + EXPIRING</text>
+  <text x="910" y="315" class="t">Task capability envelope</text>
+  <text x="910" y="356" class="b">Repository + immutable revision</text>
+  <text x="910" y="391" class="b">Read/write paths + explicit denies</text>
+  <text x="910" y="426" class="b">Commands + network destinations</text>
+  <text x="910" y="461" class="b">Secret handles + effect classes</text>
+  <text x="910" y="496" class="b">Steps + time + cost budgets</text>
+  <text x="910" y="531" class="b">Evidence contract + expiry + nonce</text>
+
+  <path d="M1268 397H1340" class="line"/>
+  <rect x="1350" y="272" width="170" height="250" rx="26" class="mint"/>
+  <text x="1376" y="320" class="m">WORKER</text>
+  <text x="1376" y="366" class="t">Isolated</text>
+  <text x="1376" y="405" class="b">Verify grant</text>
+  <text x="1376" y="438" class="b">Configure limits</text>
+  <text x="1376" y="471" class="b">Lease credentials</text>
+
+  <rect x="118" y="660" width="1364" height="108" rx="24" class="navy"/>
+  <text x="800" y="704" text-anchor="middle" class="white" style="font:700 22px Inter,Arial,sans-serif">ENFORCEMENT TEST</text>
+  <text x="800" y="744" text-anchor="middle" class="white" style="font:400 19px Inter,Arial,sans-serif">If a path, command, host, credential, or effect cannot be enforced, the task is rejected before execution.</text>
+</svg>

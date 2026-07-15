@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Shared state ownership and conflict handling</title>
+  <desc id="desc">A typed state contract separates agent-owned, user-interface-owned, jointly edited, backend-owned, and derived fields. A versioned patch sequence rejects or rebases a stale update instead of silently overwriting a newer user change.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 28px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 16px 'Spline Sans Mono',monospace;letter-spacing:1.2px;fill:#57575B}.body{font:500 21px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 18px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">One state, multiple owners</text>
+  <text x="90" y="132" class="subtitle">Shared state is a versioned contract—not one object that every actor may overwrite.</text>
+
+  <g transform="translate(80 190)">
+    <rect width="700" height="590" rx="34" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="34" y="54" class="heading">Typed state contract</text>
+    <text x="34" y="87" class="small">Ownership determines who may write and how updates merge.</text>
+    <g transform="translate(34 122)">
+      <rect width="632" height="78" rx="20" fill="#E7FBF5" stroke="#85ECCE" stroke-width="2"/>
+      <rect x="18" y="18" width="134" height="42" rx="21" fill="#85ECCE"/><text x="85" y="46" text-anchor="middle" class="label">AGENT-OWNED</text>
+      <text x="176" y="36" class="body">plan · current action</text><text x="176" y="62" class="small">Agent patch; user observes or requests correction.</text>
+    </g>
+    <g transform="translate(34 214)">
+      <rect width="632" height="78" rx="20" fill="#F3F0FF" stroke="#BEC2FF" stroke-width="2"/>
+      <rect x="18" y="18" width="116" height="42" rx="21" fill="#BEC2FF"/><text x="76" y="46" text-anchor="middle" class="label">UI-OWNED</text>
+      <text x="158" y="36" class="body">filters · active tab</text><text x="158" y="62" class="small">Never overwritten by an agent snapshot.</text>
+    </g>
+    <g transform="translate(34 306)">
+      <rect width="632" height="78" rx="20" fill="#EEE6FE" stroke="#BEC2FF" stroke-width="2"/>
+      <rect x="18" y="18" width="130" height="42" rx="21" fill="#11143D"/><text x="83" y="46" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">JOINT EDIT</text>
+      <text x="172" y="36" class="body">outline · transaction category</text><text x="172" y="62" class="small">Versioned patches with reject, merge, or rebase.</text>
+    </g>
+    <g transform="translate(34 398)">
+      <rect width="632" height="78" rx="20" fill="#F7F7F9" stroke="#DBDBE5" stroke-width="2"/>
+      <rect x="18" y="18" width="148" height="42" rx="21" fill="#57575B"/><text x="92" y="46" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">BACKEND-OWNED</text>
+      <text x="190" y="36" class="body">tenant · authorization · receipt</text><text x="190" y="62" class="small">Projected to client; never trusted from client.</text>
+    </g>
+    <g transform="translate(34 490)">
+      <rect width="632" height="66" rx="20" fill="#FAFAFC" stroke="#DBDBE5" stroke-width="2" stroke-dasharray="8 8"/>
+      <rect x="18" y="12" width="108" height="42" rx="21" fill="#F0F0F4"/><text x="72" y="40" text-anchor="middle" class="label">DERIVED</text>
+      <text x="150" y="40" class="body">totals · progress · validation</text>
+    </g>
+  </g>
+
+  <g transform="translate(840 190)">
+    <rect width="680" height="590" rx="34" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <text x="34" y="54" class="heading">Conflict-safe update sequence</text>
+    <text x="34" y="87" class="small">Preserve the user's newer edit or surface an explicit conflict.</text>
+
+    <g transform="translate(34 132)">
+      <circle cx="40" cy="40" r="32" fill="#BEC2FF"/><text x="40" y="48" text-anchor="middle" class="heading">1</text>
+      <text x="92" y="36" class="body">Agent reads revision 12</text><text x="92" y="64" class="small">category = “Food”</text>
+    </g>
+    <path d="M74 218V248" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(34 258)">
+      <circle cx="40" cy="40" r="32" fill="#85ECCE"/><text x="40" y="48" text-anchor="middle" class="heading">2</text>
+      <text x="92" y="36" class="body">User commits revision 13</text><text x="92" y="64" class="small">category = “Client meal”</text>
+    </g>
+    <path d="M74 344V374" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(34 384)">
+      <circle cx="40" cy="40" r="32" fill="#EEE6FE"/><text x="40" y="48" text-anchor="middle" class="heading">3</text>
+      <text x="92" y="36" class="body">Agent submits patch against rev 12</text><text x="92" y="64" class="small">Server detects stale base revision.</text>
+    </g>
+    <path d="M74 470V500" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(34 510)">
+      <rect width="612" height="62" rx="22" fill="#11143D"/>
+      <text x="26" y="38" class="label" fill="#85ECCE" style="fill:#85ECCE">REJECT OR REBASE</text>
+      <text x="232" y="39" class="body" fill="#FFFFFF" style="fill:#FFFFFF">Never silently restore the older value.</text>
+    </g>
+  </g>
+
+  <rect x="330" y="816" width="940" height="50" rx="25" fill="#EEE6FE"/>
+  <text x="800" y="849" text-anchor="middle" class="body">Task state ≠ memory ≠ trace · checkpoints recover execution, not external side effects</text>
+</svg>

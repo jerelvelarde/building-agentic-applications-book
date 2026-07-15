@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Reject stale work instead of losing the user's edit</title><desc id="desc">A late agent patch based on revision 12 cannot overwrite revisions 13 and 14.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Reject stale work instead of losing the user's edit</text><text x="80" y="124" class="subtitle">A late agent patch based on revision 12 cannot overwrite revisions 13 and 14.</text>
+  <g transform="translate(120 185)">
+    <text x="0" y="30" class="label">USER / UI</text><text x="0" y="150" class="label">RUNTIME STATE</text><text x="0" y="270" class="label">AGENT</text>
+    <line x1="170" y1="25" x2="1360" y2="25" stroke="#BEC2FF" stroke-width="5"/><line x1="170" y1="145" x2="1360" y2="145" stroke="#85ECCE" stroke-width="5"/><line x1="170" y1="265" x2="1360" y2="265" stroke="#838389" stroke-width="5"/>
+    <g transform="translate(220 95)"><circle r="18" fill="#85ECCE"/><rect x="-92" y="30" width="184" height="92" rx="20" fill="#FFFFFF" stroke="#DBDBE5"/><text x="0" y="64" class="label" text-anchor="middle">rev 12</text><text x="0" y="96" class="small" text-anchor="middle">July goal</text></g>
+<g transform="translate(520 95)"><circle r="18" fill="#85ECCE"/><rect x="-92" y="30" width="184" height="92" rx="20" fill="#FFFFFF" stroke="#DBDBE5"/><text x="0" y="64" class="label" text-anchor="middle">rev 13</text><text x="0" y="96" class="small" text-anchor="middle">date → Q2</text></g>
+<g transform="translate(820 95)"><circle r="18" fill="#85ECCE"/><rect x="-92" y="30" width="184" height="92" rx="20" fill="#FFFFFF" stroke="#DBDBE5"/><text x="0" y="64" class="label" text-anchor="middle">rev 14</text><text x="0" y="96" class="small" text-anchor="middle">goal → travel</text></g>
+<g transform="translate(1170 95)"><circle r="18" fill="#FA5F67"/><rect x="-92" y="30" width="184" height="92" rx="20" fill="#FFFFFF" stroke="#DBDBE5"/><text x="0" y="64" class="label" text-anchor="middle">STALE</text><text x="0" y="96" class="small" text-anchor="middle">reject patch</text></g>
+    <circle cx="1170" cy="222" r="6" fill="#FA5F67"/><path d="M 250 265 C 420 380 1050 380 1170 222" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/><text x="680" y="430" class="body" text-anchor="middle">Agent finishes July work from base revision 12</text>
+    <rect x="390" y="490" width="770" height="92" rx="28" fill="#E8FBF5" stroke="#85ECCE"/><text x="775" y="528" class="heading" text-anchor="middle">Preserve current state; mark old artifact superseded</text><text x="775" y="560" class="small" text-anchor="middle">Recompute from revision 14 or merge only a field with a safe reducer.</text>
+  </g>
+
+</svg>

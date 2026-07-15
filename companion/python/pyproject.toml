@@ -1,0 +1,16 @@
+[project]
+name = "agentic-applications-book-graph"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["langgraph==1.2.9"]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff==0.15.21"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

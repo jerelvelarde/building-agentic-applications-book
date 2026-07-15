@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Machine-agent hardening ladder</title>
+  <desc id="desc">Seven rising steps move a machine-agent demo from visibility through authentication, scope, approval, isolation, recovery, and verification. Each step lists the production question it answers. A note warns that later controls do not compensate for skipped earlier controls.</desc>
+  <defs>
+    <linearGradient id="steps" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#85ECCE"/><stop offset="0.58" stop-color="#BEC2FF"/><stop offset="1" stop-color="#EEE6FE"/></linearGradient>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.number{font:700 34px 'Spline Sans Mono',monospace;fill:#11143D}.heading{font:700 23px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:700 16px 'Spline Sans Mono',monospace;letter-spacing:1.2px;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">From visible demo to supervised worker</text>
+  <text x="90" y="132" class="subtitle">Each step closes a different failure mode. Visibility is the beginning, not the boundary.</text>
+  <path d="M90 760H1510" stroke="#DBDBE5" stroke-width="3"/>
+
+  <g transform="translate(90 636)">
+    <rect width="190" height="124" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">01</text><text x="22" y="76" class="heading">Visibility</text><text x="22" y="103" class="small">What did it do?</text>
+  </g>
+  <g transform="translate(290 566)">
+    <rect width="190" height="194" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">02</text><text x="22" y="76" class="heading">Authentication</text><text x="22" y="106" class="small">Who requested?</text><text x="22" y="132" class="small">Which service acts?</text>
+  </g>
+  <g transform="translate(490 496)">
+    <rect width="190" height="264" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">03</text><text x="22" y="76" class="heading">Scope</text><text x="22" y="106" class="small">Which paths, tools,</text><text x="22" y="132" class="small">network, and secrets?</text>
+  </g>
+  <g transform="translate(690 426)">
+    <rect width="190" height="334" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">04</text><text x="22" y="76" class="heading">Approval</text><text x="22" y="106" class="small">Which exact action?</text><text x="22" y="132" class="small">Which eligible person?</text>
+  </g>
+  <g transform="translate(890 356)">
+    <rect width="190" height="404" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">05</text><text x="22" y="76" class="heading">Isolation</text><text x="22" y="106" class="small">What can the process</text><text x="22" y="132" class="small">actually reach?</text>
+  </g>
+  <g transform="translate(1090 286)">
+    <rect width="190" height="474" rx="24" fill="url(#steps)"/>
+    <text x="22" y="42" class="number">06</text><text x="22" y="76" class="heading">Recovery</text><text x="22" y="106" class="small">Discard, restore,</text><text x="22" y="132" class="small">revert, or compensate?</text>
+  </g>
+  <g transform="translate(1290 216)">
+    <rect width="220" height="544" rx="24" fill="#11143D"/>
+    <text x="22" y="42" class="number" fill="#85ECCE" style="fill:#85ECCE">07</text><text x="22" y="76" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Verification</text>
+    <text x="22" y="110" class="small" fill="#FFFFFF" style="fill:#FFFFFF">Did the result pass</text><text x="22" y="136" class="small" fill="#FFFFFF" style="fill:#FFFFFF">deterministic checks?</text>
+    <line x1="22" y1="182" x2="198" y2="182" stroke="#BEC2FF" opacity="0.6"/>
+    <text x="22" y="222" class="label" fill="#85ECCE" style="fill:#85ECCE">EVIDENCE</text>
+    <text x="22" y="258" class="small" fill="#FFFFFF" style="fill:#FFFFFF">diff hash</text><text x="22" y="288" class="small" fill="#FFFFFF" style="fill:#FFFFFF">commands</text><text x="22" y="318" class="small" fill="#FFFFFF" style="fill:#FFFFFF">tests</text><text x="22" y="348" class="small" fill="#FFFFFF" style="fill:#FFFFFF">policy decisions</text><text x="22" y="378" class="small" fill="#FFFFFF" style="fill:#FFFFFF">outcome receipt</text>
+  </g>
+
+  <rect x="90" y="808" width="1420" height="54" rx="27" fill="#EEE6FE"/>
+  <text x="800" y="842" text-anchor="middle" class="heading">Do not skip a rung: later controls cannot authenticate an earlier anonymous action.</text>
+</svg>

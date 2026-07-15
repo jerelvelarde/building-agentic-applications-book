@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A complete Level 1 run</title><desc id="desc">Follow the authenticated run from goal to semantic artifact and authoritative result.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">A complete Level 1 run</text><text x="80" y="124" class="subtitle">Follow the authenticated run from goal to semantic artifact and authoritative result.</text>
+  <g transform="translate(55 210)">
+    <rect width="240" height="330" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">CLIENT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Web / mobile</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">goal + view context</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">stable thread ID</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">semantic renderer</text>
+  </g>
+<g transform="translate(355 210)">
+    <rect width="240" height="330" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">AG-UI</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Event boundary</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">run + step</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">tool + state</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">interrupt + result</text>
+  </g>
+<g transform="translate(655 210)">
+    <rect width="240" height="330" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RUNTIME</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Trusted context</text>
+    <text x="28" y="116" class="small" fill="#FFFFFF" style="fill:#FFFFFF">allowlisted agent</text>
+<text x="28" y="144" class="small" fill="#FFFFFF" style="fill:#FFFFFF">model + budgets</text>
+<text x="28" y="172" class="small" fill="#FFFFFF" style="fill:#FFFFFF">phase tools</text>
+  </g>
+<g transform="translate(955 210)">
+    <rect width="240" height="330" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TOOL BOUNDARY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Authorize</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">principal + tenant</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">policy + idempotency</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">safe result</text>
+  </g>
+<g transform="translate(1255 210)">
+    <rect width="290" height="330" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">PRODUCT SERVICE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Source of truth</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">protected ledger read</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">domain write</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">authoritative receipt</text>
+  </g>
+<path d="M 295 375 L 355 375" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 595 375 L 655 375" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 895 375 L 955 375" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1195 375 L 1255 375" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1400 570 C 1100 760 460 760 175 570" stroke="#85ECCE" stroke-width="5" fill="none" marker-end="url(#arrow)"/><text x="800" y="740" class="body" text-anchor="middle">Correlated result + receipt returns to application-owned UI</text>
+
+</svg>

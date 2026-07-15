@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Retry the logical operation—not the side effect</title><desc id="desc">A lost response after commit must not create a second transaction.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">Retry the logical operation—not the side effect</text><text x="80" y="124" class="subtitle">A lost response after commit must not create a second transaction.</text>
+  <g transform="translate(70 210)">
+    <rect width="280" height="300" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">PROPOSAL 7</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Operation identity</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">tenant + proposal</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">logical operation ID</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">stable idempotency key</text>
+  </g>
+<g transform="translate(440 210)">
+    <rect width="280" height="300" rx="28" fill="#010507" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">ATTEMPT 1</text>
+    <text x="28" y="78" class="heading" fill="#FFFFFF" style="fill:#FFFFFF">Commit once</text>
+    <text x="28" y="116" class="small" fill="#FFFFFF" style="fill:#FFFFFF">service accepts write</text>
+<text x="28" y="144" class="small" fill="#FFFFFF" style="fill:#FFFFFF">stores receipt by key</text>
+<text x="28" y="172" class="small" fill="#FFFFFF" style="fill:#FFFFFF">response is lost</text>
+  </g>
+<g transform="translate(810 210)">
+    <rect width="280" height="300" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">RETRY</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Same key</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">same canonical payload</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">lookup before write</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">no duplicate effect</text>
+  </g>
+<g transform="translate(1180 210)">
+    <rect width="350" height="300" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">AUTHORITATIVE RESULT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Return receipt</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">existing transaction ID</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">committed status</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">conflicting payload fails</text>
+  </g>
+<path d="M 350 360 L 440 360" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 720 360 L 810 360" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1090 360 L 1180 360" stroke="#838389" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M 580 535 C 690 690 950 690 980 535" stroke="#FA5F67" stroke-width="4" fill="none" marker-end="url(#arrow)"/><text x="800" y="690" class="body" text-anchor="middle">unknown outcome → reconcile by the same operation key</text>
+
+</svg>

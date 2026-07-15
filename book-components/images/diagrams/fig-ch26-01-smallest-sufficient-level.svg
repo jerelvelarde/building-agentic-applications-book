@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Decision tree for the smallest sufficient agent level</title>
+  <desc id="desc">A decision tree starts by asking whether deterministic software can solve the outcome. If adaptive judgment is needed, typed application tools lead to Level 1, environment discovery or dynamic machine composition leads to Level 2, and shared organizational invocation and authority lead to Level 3. Hybrid designs use typed, authenticated, expiring handoffs.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#85ECCE"/><stop offset="0.6" stop-color="#BEC2FF"/><stop offset="1" stop-color="#EEE6FE"/></linearGradient>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 25px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 15px 'Spline Sans Mono',monospace;letter-spacing:1.1px;fill:#57575B}.body{font:500 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">Choose the smallest sufficient level</text>
+  <text x="90" y="132" class="subtitle">Begin with the outcome, then add only the authority the environment truly requires.</text>
+
+  <g transform="translate(500 180)">
+    <rect width="600" height="88" rx="30" fill="#11143D"/>
+    <text x="300" y="38" text-anchor="middle" class="label" fill="#85ECCE" style="fill:#85ECCE">OUTCOME FIRST</text>
+    <text x="300" y="68" text-anchor="middle" class="body" fill="#FFFFFF" style="fill:#FFFFFF">What must change, for whom, under whose authority?</text>
+  </g>
+  <path d="M800 268V322" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g transform="translate(510 332)">
+    <rect width="580" height="82" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="290" y="34" text-anchor="middle" class="heading">Can deterministic software own the path?</text>
+    <text x="290" y="62" text-anchor="middle" class="small">Known steps, stable rules, no adaptive judgment required</text>
+  </g>
+  <path d="M510 373H300V472" fill="none" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="392" y="356" class="label">YES</text>
+  <g transform="translate(90 482)">
+    <rect width="420" height="142" rx="30" fill="#E7FBF5" stroke="#85ECCE" stroke-width="3"/>
+    <text x="28" y="42" class="label">STOP HERE</text><text x="28" y="82" class="heading">Workflow or feature</text><text x="28" y="114" class="small">A model call can still be one deterministic step.</text>
+  </g>
+
+  <path d="M1090 373H1260V472" fill="none" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="1132" y="356" class="label">NO</text>
+  <g transform="translate(1100 482)">
+    <rect width="410" height="142" rx="30" fill="#FFFFFF" stroke="#BEC2FF" stroke-width="3"/>
+    <text x="28" y="42" class="label">ADAPTIVE JUDGMENT</text><text x="28" y="82" class="heading">Which surface must it reach?</text><text x="28" y="114" class="small">Prefer explicit tools before broad environment access.</text>
+  </g>
+
+  <path d="M1305 624V704H300" fill="none" stroke="#6857D9" stroke-width="4"/>
+  <path d="M300 704V726" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M800 704V726" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1300 704V726" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g transform="translate(90 736)">
+    <rect width="420" height="145" rx="30" fill="#E7FBF5" stroke="#85ECCE" stroke-width="3"/>
+    <text x="28" y="38" class="label">LEVEL 1 · APPLICATION</text><text x="28" y="84" class="heading">Typed app tools are sufficient</text><text x="28" y="118" class="small">Purpose-built web or mobile control plane</text>
+  </g>
+  <g transform="translate(590 736)">
+    <rect width="420" height="145" rx="30" fill="#F3F0FF" stroke="#BEC2FF" stroke-width="3"/>
+    <text x="28" y="38" class="label">LEVEL 2 · MACHINE</text><text x="28" y="72" class="heading">Environment discovery</text><text x="28" y="100" class="heading">is essential</text><text x="28" y="128" class="small">Filesystem, shell, process, browser, or CLI</text>
+  </g>
+  <g transform="translate(1090 736)">
+    <rect width="420" height="145" rx="30" fill="#EEE6FE" stroke="#BEC2FF" stroke-width="3"/>
+    <text x="28" y="38" class="label">LEVEL 3 · ORGANIZATION</text><text x="28" y="84" class="heading">Shared invocation creates value</text><text x="28" y="118" class="small">Actor identity, policy, memory, and audit</text>
+  </g>
+
+  <rect x="540" y="636" width="520" height="46" rx="23" fill="url(#accent)"/>
+  <text x="800" y="666" text-anchor="middle" class="body">Hybrid? Use a typed, authenticated, expiring task handoff.</text>
+</svg>

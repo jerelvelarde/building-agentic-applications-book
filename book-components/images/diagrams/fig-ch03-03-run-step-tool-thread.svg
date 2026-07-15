@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Thread, run, step, tool-call, checkpoint, and trace model</title>
+  <desc id="desc">A persistent thread contains two runs. The first run contains planning, model, tool, observation, and finish steps. The second run resumes later in the same thread. A tool call is nested inside a step and a checkpoint appears between steps.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6857D9"/></marker>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EDEDF5"/><stop offset="1" stop-color="#FAFAFC"/></linearGradient>
+    <style>
+      .title{font:700 52px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.subtitle{font:400 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 29px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.label{font:700 17px 'Spline Sans Mono',monospace;letter-spacing:1.4px;fill:#57575B}.body{font:500 22px 'Plus Jakarta Sans',Arial,sans-serif;fill:#11143D}.small{font:400 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FAFAFC"/>
+  <text x="90" y="92" class="title">One task, four execution units</text>
+  <text x="90" y="132" class="subtitle">The interface, runtime, persistence layer, and trace system must use the same vocabulary.</text>
+
+  <rect x="80" y="180" width="1440" height="620" rx="38" fill="url(#thread)" stroke="#BEC2FF" stroke-width="3"/>
+  <rect x="112" y="210" width="130" height="40" rx="20" fill="#11143D"/>
+  <text x="177" y="237" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">THREAD</text>
+  <text x="270" y="238" class="body">Persistent task history and state across related runs</text>
+
+  <g transform="translate(120 290)">
+    <rect width="1020" height="380" rx="30" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="28" y="24" width="114" height="38" rx="19" fill="#85ECCE" opacity="0.55"/>
+    <text x="85" y="50" text-anchor="middle" class="label">RUN 01</text>
+    <text x="160" y="51" class="small">A user-visible attempt to complete the goal</text>
+
+    <g transform="translate(38 102)">
+      <rect width="150" height="102" rx="22" fill="#F7F7F9" stroke="#DBDBE5" stroke-width="2"/>
+      <text x="75" y="38" text-anchor="middle" class="label">STEP 1</text><text x="75" y="71" text-anchor="middle" class="body">Plan</text>
+      <path d="M150 51H198" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(236 102)">
+      <rect width="150" height="102" rx="22" fill="#F7F7F9" stroke="#DBDBE5" stroke-width="2"/>
+      <text x="75" y="38" text-anchor="middle" class="label">STEP 2</text><text x="75" y="71" text-anchor="middle" class="body">Decide</text>
+      <path d="M150 51H198" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(434 84)">
+      <rect width="200" height="138" rx="22" fill="#EEE6FE" stroke="#BEC2FF" stroke-width="3"/>
+      <text x="100" y="36" text-anchor="middle" class="label">STEP 3</text><text x="100" y="68" text-anchor="middle" class="body">Act</text>
+      <rect x="24" y="86" width="152" height="34" rx="17" fill="#11143D"/>
+      <text x="100" y="109" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">TOOL CALL</text>
+      <path d="M200 69H248" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(682 102)">
+      <rect width="150" height="102" rx="22" fill="#F7F7F9" stroke="#DBDBE5" stroke-width="2"/>
+      <text x="75" y="38" text-anchor="middle" class="label">STEP 4</text><text x="75" y="71" text-anchor="middle" class="body">Observe</text>
+      <path d="M150 51H198" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(880 102)">
+      <rect width="112" height="102" rx="22" fill="#85ECCE" opacity="0.48" stroke="#189370" stroke-width="2"/>
+      <text x="56" y="38" text-anchor="middle" class="label">STEP 5</text><text x="56" y="71" text-anchor="middle" class="body">Finish</text>
+    </g>
+
+    <circle cx="658" cy="264" r="10" fill="#FFFFFF" stroke="#6857D9" stroke-width="4"/>
+    <line x1="658" y1="274" x2="658" y2="318" stroke="#6857D9" stroke-width="3" stroke-dasharray="7 7"/>
+    <text x="658" y="347" text-anchor="middle" class="label">CHECKPOINT</text>
+    <text x="658" y="372" text-anchor="middle" class="small">Persisted between meaningful effects</text>
+  </g>
+
+  <g transform="translate(1180 290)">
+    <rect width="300" height="380" rx="30" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <rect x="28" y="24" width="114" height="38" rx="19" fill="#BEC2FF" opacity="0.65"/>
+    <text x="85" y="50" text-anchor="middle" class="label">RUN 02</text>
+    <text x="28" y="105" class="heading">Resume later</text>
+    <text x="28" y="145" class="small">Same thread identity</text>
+    <text x="28" y="177" class="small">New run lifecycle</text>
+    <text x="28" y="209" class="small">Reads prior checkpoint</text>
+    <path d="M150 238V296" stroke="#6857D9" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="60" y="304" width="180" height="48" rx="24" fill="#11143D"/>
+    <text x="150" y="336" text-anchor="middle" class="label" fill="#FFFFFF" style="fill:#FFFFFF">CONTINUE LOOP</text>
+  </g>
+
+  <rect x="330" y="744" width="940" height="92" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+  <text x="800" y="782" text-anchor="middle" class="body">Thread stores continuity · Run carries lifecycle · Step advances execution · Tool call creates an effect</text>
+  <text x="800" y="814" text-anchor="middle" class="small">A trace observes these units; it does not replace their durable state.</text>
+</svg>

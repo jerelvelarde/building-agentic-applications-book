@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">One interface, four execution architectures</title><desc id="desc">The decisive difference is who chooses the next step.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#BEC2FF" stop-opacity=".22"/><stop offset=".48" stop-color="#85ECCE" stop-opacity=".18"/><stop offset="1" stop-color="#FFAC4D" stop-opacity=".10"/></linearGradient></defs>
+  <style>.title{font:700 42px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.subtitle{font:400 20px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.heading{font:700 24px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.body{font:500 19px 'Plus Jakarta Sans',Arial,sans-serif;fill:#010507}.small{font:400 17px 'Plus Jakarta Sans',Arial,sans-serif;fill:#57575B}.label{font:600 13px 'Spline Sans Mono',monospace;letter-spacing:1px;fill:#57575B}.mono{font:500 16px 'Spline Sans Mono',monospace;fill:#57575B}</style>
+  <rect width="1600" height="900" fill="#FAFAFC"/><ellipse cx="1260" cy="100" rx="430" ry="230" fill="url(#wash)"/>
+  <text x="80" y="86" class="title">One interface, four execution architectures</text><text x="80" y="124" class="subtitle">The decisive difference is who chooses the next step.</text>
+  <g transform="translate(55 180)">
+    <rect width="350" height="430" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">MODEL FEATURE</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Application routes</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">input → one model call</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">validated output → code</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">stop: call returns</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">risk: bad output</text>
+  </g>
+<g transform="translate(435 180)">
+    <rect width="350" height="430" rx="28" fill="#F2F2FF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">WORKFLOW</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Graph routes</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">developer-authored path</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">branches encoded in code</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">stop: end node</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">risk: bad workflow logic</text>
+  </g>
+<g transform="translate(815 180)">
+    <rect width="350" height="430" rx="28" fill="#FFFFFF" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">TOOL ASSISTANT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Bounded shared routing</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">model requests narrow tool</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">application validates/executes</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">fixed continuation policy</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">risk: unsafe request</text>
+  </g>
+<g transform="translate(1195 180)">
+    <rect width="350" height="430" rx="28" fill="#E8FBF5" stroke="#DBDBE5" stroke-width="2"/>
+    <text x="28" y="38" class="label">AGENT</text>
+    <text x="28" y="78" class="heading" fill="#010507" style="fill:#010507">Model routes in a loop</text>
+    <text x="28" y="116" class="small" fill="#010507" style="fill:#010507">reads state + observations</text>
+<text x="28" y="144" class="small" fill="#010507" style="fill:#010507">selects action repeatedly</text>
+<text x="28" y="172" class="small" fill="#010507" style="fill:#010507">interrupt/fail/limit/finish</text>
+<text x="28" y="200" class="small" fill="#010507" style="fill:#010507">risk: unsafe trajectory</text>
+  </g>
+<rect x="90" y="670" width="1420" height="90" rx="28" fill="#010507"/><text x="800" y="726" class="heading" text-anchor="middle" fill="#FFFFFF" style="fill:#FFFFFF">Chat is the interface. Routing ownership is the architecture.</text>
+
+</svg>

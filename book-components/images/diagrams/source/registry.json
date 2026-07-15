@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "assetDirectory": "..",
+  "defaultOwnership": "hand-authored-svg",
+  "generators": [
+    {
+      "id": "final-deterministic",
+      "source": "../generate-final-deterministic.mjs",
+      "outputs": [
+        "fig-ch02-02-workflow-or-agent-decision-tree.svg",
+        "fig-ch05-00-level1-build-path.svg",
+        "fig-ch06-05-capabilities-by-phase.svg",
+        "fig-ch08-04-three-store-boundary.svg",
+        "fig-ch12-04-independent-verifier-pipeline.svg",
+        "fig-ch13-03-filesystem-path-boundaries.svg",
+        "fig-ch17-03-policy-hierarchy.svg",
+        "fig-ch18-04-graceful-degradation-ladder.svg",
+        "fig-ch23-00-production-control-loop.svg",
+        "fig-ch23-03-dataset-suites-and-case-envelope.svg",
+        "fig-ch23-04-severity-and-safe-task-success.svg",
+        "fig-ch24-03-control-plane-fail-closed.svg",
+        "fig-ch24-04-agentic-supply-chain-inventory.svg",
+        "fig-ch24-05-agent-security-incident-runbook.svg",
+        "fig-ch25-05-one-deadline-budget.svg",
+        "fig-ch25-06-degraded-mode-matrix.svg",
+        "fig-ch26-04-cross-level-task-envelope.svg",
+        "fig-ch26-05-upgrade-downshift-lifecycle.svg",
+        "fig-ch27-03-consolidated-knobs-reference.svg",
+        "fig-ch27-04-evidence-bearing-quickstart.svg"
+      ]
+    },
+    {
+      "id": "wave1-level2-level3",
+      "source": "../generate-wave1-l2-l3.mjs",
+      "outputs": [
+        "fig-ch11-02-repository-exfiltration.svg",
+        "fig-ch11-03-ten-part-harness.svg",
+        "fig-ch11-04-ledger-request-boundaries.svg",
+        "fig-ch12-01-same-model-different-harness.svg",
+        "fig-ch12-02-skill-promotion-pipeline.svg",
+        "fig-ch12-03-phase-capability-staircase.svg",
+        "fig-ch13-02-combined-control-exfiltration.svg",
+        "fig-ch14-01-machine-harness-operating-models.svg",
+        "fig-ch15-01-source-present-topology.svg",
+        "fig-ch15-02-readiness-staircase.svg",
+        "fig-ch15-03-supervision-broker.svg",
+        "fig-ch15-04-supervision-states.svg",
+        "fig-ch16-01-duplicate-delivery-timeline.svg",
+        "fig-ch16-02-durable-run-state-machine.svg",
+        "fig-ch17-01-organizational-actor-chain.svg",
+        "fig-ch17-02-memory-promotion.svg",
+        "fig-ch18-02-cross-channel-semantic-approval.svg",
+        "fig-ch18-03-durable-identifiers-restart.svg",
+        "fig-ch19-02-approval-record-and-ui.svg",
+        "fig-ch19-03-audit-vs-channel-timeline.svg",
+        "fig-level3-01-message-authority-anatomy.svg"
+      ]
+    }
+  ]
+}
